@@ -7,8 +7,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Env
-.env
-.env.local
 
 # Prisma
 apps/access-api/prisma/dev.db
@@ -30,3 +28,4 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 bun.lock
+config.bat
