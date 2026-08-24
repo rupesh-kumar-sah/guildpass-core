@@ -8,15 +8,15 @@
   ],
   "scripts": {
     "postinstall": "pnpm --filter access-api exec prisma generate",
-    "build": "pnpm -r --if-present build",
-    "dev": "npm run -w access-api dev",
+    "build": "node init && pnpm -r --if-present build",
+    "dev": "node init && npm run -w access-api dev",
     "test": "pnpm -r --if-present test",
     "test:ci": "pnpm -r --filter '!access-api' --if-present test && pnpm --filter access-api test:ci",
     "lint": "pnpm -r --if-present lint",
     "lint:ci": "pnpm -r --filter '!access-api' --if-present lint",
     "typecheck": "pnpm -r --if-present typecheck",
     "seed": "npm run -w access-api seed",
-    "start": "npm run -w access-api start",
+    "start": "node init && npm run -w access-api start",
     "contracts:build": "forge build",
     "contracts:test": "forge test",
     "contracts:deploy": "forge script contracts/script/Deploy.s.sol --broadcast"
