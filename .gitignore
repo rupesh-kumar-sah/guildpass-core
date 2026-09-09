@@ -3,8 +3,6 @@ node_modules/
 .pnpm-store/
 
 # Environment
-.env
-.env.local
 .env.*.local
 !.env.example
 
@@ -24,7 +22,6 @@ pnpm-debug.log*
 
 # IDE
 .idea/
-.vscode/
 
 # Prisma/local databases
 *.db
@@ -36,3 +33,4 @@ target/
 # Misc
 .tmp/
 .cache/
+config.bat
