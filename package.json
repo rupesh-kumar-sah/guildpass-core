@@ -8,10 +8,10 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "node init && pnpm -r build",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
-    "dev": "pnpm --filter @guildpass/api dev",
+    "dev": "node init && pnpm --filter @guildpass/api dev",
     "db:generate": "pnpm --filter @guildpass/api prisma:generate",
     "db:migrate": "pnpm --filter @guildpass/api prisma:migrate",
     "db:studio": "pnpm --filter @guildpass/api prisma:studio"
